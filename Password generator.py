@@ -14,11 +14,11 @@ random_letter = ''
 random_symbol = ''
 random_number = ''
 
-for lchoice in range(0, nr_letters + 1):
+for lchoice in range(0, nr_letters):
     random_letter += (random.choice(letters))
-for schoice in range(0, nr_symbols + 1):
+for schoice in range(0, nr_symbols):
     random_symbol += (random.choice(symbols))
-for nchoice in range(0, nr_numbers + 1):
+for nchoice in range(0, nr_numbers):
     random_number += (random.choice(numbers))
 
 final_password = str(random_letter) + str(random_symbol) + str(random_number)
